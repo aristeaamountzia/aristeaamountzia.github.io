@@ -1,0 +1,122 @@
+/* Βασικό στυλ */
+body {
+    font-family: cormorantgaramond-semibold, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Στυλ για το λογότυπο */
+.logo-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .logo {
+    width: 90px; /* Μέγεθος λογότυπου */
+    height: auto;
+  }
+  
+  /* Στυλ για το μενού */
+  .menu {
+    display: flex;
+    justify-content: center; /* Κεντράρει τα εικονίδια */
+    padding: 0;
+    margin: 50px 0;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin: 0 15px; /* Απόσταση μεταξύ των εικονιδίων */
+  }
+  
+  .menu a img {
+    width: 70px; /* Προσαρμογή μεγέθους εικονιδίων */
+    height: auto;
+    transition: transform 0.2s ease; /* Εφέ μεγέθυνσης στο hover */
+  }
+  
+  .menu a img:hover {
+    transform: scale(1.2); /* Μεγέθυνση στο hover */
+  }
+  
+
+/* Στυλ για την αρχική γκαλερί */
+.home-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-card {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-card p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    z-index: 10;
+    text-align: center;
+}
+
+
+/* Στυλ για τις σελίδες κατηγοριών */
+.category-page {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.category-page h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    color: #000;
+}
+
+.category-page p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
